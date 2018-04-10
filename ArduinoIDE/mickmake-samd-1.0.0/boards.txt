@@ -23,5 +23,5 @@ mickmake_superduper_r1.build.variant_system_lib=
 mickmake_superduper_r1.build.vid=0x4242
 mickmake_superduper_r1.build.pid=0x4242
 mickmake_superduper_r1.bootloader.tool=openocd
-mickmake_superduper_r1.bootloader.file=SuperDuperRev1/samd21_sam_ba.bin
+mickmake_superduper_r1.bootloader.file=SuperDuper/samd21_sam_ba.bin
 

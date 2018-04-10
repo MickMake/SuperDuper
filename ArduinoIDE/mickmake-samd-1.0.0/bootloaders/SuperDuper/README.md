@@ -1,4 +1,4 @@
-# Arduino Zero Bootloader
+# Super Duper Bootloader
 
 ## 1- Prerequisites
 
@@ -8,6 +8,7 @@ Makefile is present at project root and try to handle multi-platform cases.
 Multi-plaform GCC is provided by ARM here: https://launchpad.net/gcc-arm-embedded/+download
 
 Atmel Studio contains both make and ARM GCC toolchain. You don't need to install them in this specific use case.
+
 
 ### Windows
 
@@ -20,9 +21,11 @@ It is available natively in all distributions.
 * Atmel Studio
 An Atmel Studio **7** Makefile-based project is present at project root, just open samd21_sam_ba.atsln file in AS7.
 
+
 ### Linux
 
 Make is usually available by default.
+
 
 ### OS X
 
@@ -38,6 +41,7 @@ Set the define SAM_BA_INTERFACE to
 * SAM_BA_USBCDC_ONLY for only USB CDC interface
 * SAM_BA_BOTH_INTERFACES for enabling both the interfaces
 
+
 ## 3- Behaviour
 
 This bootloader implements the double-tap on Reset button.
@@ -45,6 +49,7 @@ By quickly pressing this button two times, the board will reset and stay in boot
 
 The USB port in use is the USB Native port, close to the Reset button.
 The USART in use is the one available on pins D0/D1, labelled respectively RX/TX. Communication parameters are a baudrate at 115200, 8bits of data, no parity and 1 stop bit (8N1).
+
 
 ## 4- Description
 
