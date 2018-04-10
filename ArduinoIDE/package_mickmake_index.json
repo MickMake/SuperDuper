@@ -19,7 +19,7 @@
           "archiveFileName": "mickmake-samd-1.0.0.tar.bz2",
           "boards": [
             {
-              "name": "MickMake Super Duper Rev1"
+              "name": "MickMake Super Duper"
             }
           ],
           "size": "4821028",
