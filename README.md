@@ -8,6 +8,10 @@ This repo contains everything related to my Super Duper board.
 ![MickMake](https://github.com/MickMake/SuperDuper/raw/master/SuperDuper.jpg)
 
 
+## What is it?
+Once I bring it out of alpha status, I'll post a whole more detail on this board.
+
+
 ## Current status
 This is currently in alpha state and is a WIP.
 
