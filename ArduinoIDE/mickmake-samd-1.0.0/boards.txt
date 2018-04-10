@@ -1,0 +1,27 @@
+mickmake_superduper_r1.name=MickMake Super Duper Rev1
+mickmake_superduper_r1.vid.0=0x4242
+mickmake_superduper_r1.pid.0=0x4242
+mickmake_superduper_r1.vid.1=0x4242
+mickmake_superduper_r1.pid.1=0x000B
+mickmake_superduper_r1.upload.tool=bossac
+mickmake_superduper_r1.upload.protocol=sam-ba
+mickmake_superduper_r1.upload.maximum_size=262144
+mickmake_superduper_r1.upload.use_1200bps_touch=true
+mickmake_superduper_r1.upload.wait_for_upload_port=true
+mickmake_superduper_r1.upload.native_usb=true
+mickmake_superduper_r1.build.mcu=cortex-m0plus
+mickmake_superduper_r1.build.f_cpu=48000000L
+mickmake_superduper_r1.build.usb_product="Super Duper"
+mickmake_superduper_r1.build.usb_manufacturer="MickMake"
+mickmake_superduper_r1.build.board=SAMD_FEATHER_M0
+mickmake_superduper_r1.build.core=arduino
+mickmake_superduper_r1.build.extra_flags=-DARDUINO_SAMD_ZERO -D__SAMD21G18A__ {build.usb_flags}
+mickmake_superduper_r1.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+mickmake_superduper_r1.build.openocdscript=openocd_scripts/arduino_zero.cfg
+mickmake_superduper_r1.build.variant=SuperDuperRev1
+mickmake_superduper_r1.build.variant_system_lib=
+mickmake_superduper_r1.build.vid=0x4242
+mickmake_superduper_r1.build.pid=0x4242
+mickmake_superduper_r1.bootloader.tool=openocd
+mickmake_superduper_r1.bootloader.file=SuperDuperRev1/samd21_sam_ba.bin
+

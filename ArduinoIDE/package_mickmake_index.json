@@ -1,0 +1,56 @@
+{
+  "packages": [
+    {
+      "maintainer": "MickMake",
+      "help": {
+        "online": "https://mickmake.com/"
+      },
+      "websiteURL": "https://mickmake.com/",
+      "platforms": [
+        {
+          "category": "MickMake",
+          "help": {
+            "online": "https://mickmake.com/"
+          },
+          "url": "https://github.com/ArduinoIDE/mickmake-samd-1.0.0.tar.bz2",
+          "checksum": "SHA-256:ea09c6364647636d18125f869e73f1a9bb8d68bd257eaf7bd204c9083377f007",
+          "version": "1.0.0",
+          "architecture": "samd",
+          "archiveFileName": "mickmake-samd-1.0.0.tar.bz2",
+          "boards": [
+            {
+              "name": "MickMake Super Duper Rev1"
+            }
+          ],
+          "size": "4821028",
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "version": "4.8.3-2014q1",
+              "name": "arm-none-eabi-gcc"
+            },
+            {
+              "packager": "arduino",
+              "version": "1.6.1-arduino",
+              "name": "bossac"
+            },
+            {
+              "packager": "arduino",
+              "version": "0.9.0-arduino",
+              "name": "openocd"
+            },
+            {
+              "packager": "arduino",
+              "version": "4.0.0-atmel",
+              "name": "CMSIS"
+            }
+          ],
+          "name": "MickMake SAMD Boards"
+        }
+      ],
+      "tools": [],
+      "email": "mick@mickmake.com",
+      "name": "SuperDuper"
+    }
+  ]
+}
