@@ -5,6 +5,8 @@
 # Project - Super Duper
 This repo contains everything related to my Super Duper board.
 
+![MickMake](https://github.com/MickMake/SuperDuper/raw/master/SuperDuper.jpg)
+
 
 ## Current status
 This is currently in alpha state and is a WIP.
