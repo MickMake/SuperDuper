@@ -12,7 +12,7 @@
           "help": {
             "online": "https://mickmake.com/"
           },
-          "url": "https://github.com/ArduinoIDE/mickmake-samd-1.0.0.tar.bz2",
+          "url": "https://github.com/MickMake/SuperDuper/raw/master/ArduinoIDE/mickmake-samd-1.0.0.tar.bz2",
           "checksum": "SHA-256:ea09c6364647636d18125f869e73f1a9bb8d68bd257eaf7bd204c9083377f007",
           "version": "1.0.0",
           "architecture": "samd",
