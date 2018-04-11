@@ -11,6 +11,6 @@ build:
 clean:
 	@echo ----------------------------------------------------------
 	@echo Cleaning up
-	-$(RM) $(TARBALL)
+	-$(RM) $(DIR).tar.bz2
 
 .phony: build clean

@@ -15,6 +15,7 @@ fi
 
 echo "# Generate tarball: $TARBALL"
 tar jcf $TARBALL $DIR
+SIZE="`gfind $TARBALL -maxdepth 0 -printf '%s'`"
 
 SHA="`shasum -a 256 $TARBALL`"
 IFS=' ' read -r -a SHA_ARRAY <<< "$SHA"
@@ -26,15 +27,10 @@ then
 	exit 1
 fi
 
-echo "# Update $JSON with $SHA"
+echo "# Update $JSON with SHA $SHA"
 jq '.packages[0].platforms[0].checksum="'$SHA'"' < $TEMPLATE > $JSON
 
+echo "# Update $JSON with size $SIZE"
+jq '.packages[0].platforms[0].size="'$SIZE'"' < $TEMPLATE > $JSON
+
 exit 0
-
-__DATA__
-if [ "$?" == "0" ]
-then
-	perl -p -e 'BEGIN{use Env(qw(SHA))} s/"SHA-256:%%SHA%%"/"SHA-256:$gsSHA"/' ${gsJSON}.template > ${gsJSON}
-else
-fi
-
