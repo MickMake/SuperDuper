@@ -59,7 +59,13 @@ Go back to Tools -> Board -> Boards Manager and scroll down to select the Super 
 ![ScreenShot05.png](docs/ScreenShot05.png)
 ![ScreenShot12.png](docs/ScreenShot12.png)
 
-Go back to Tools and check that it has been selected.
+Go back to Tools and check that it has been selected. Also select the correct serial port.
 
 ![ScreenShot13.png](docs/ScreenShot13.png)
+
+
+### 6. Testing the board
+Try out the blink example from the Arduino IDE!
+
+![ScreenShot14.png](docs/ScreenShot14.png)
 
