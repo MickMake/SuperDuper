@@ -1,7 +1,7 @@
 mickmake_superduper_r1.name=MickMake Super Duper Rev1
-mickmake_superduper_r1.vid.0=0x4242
-mickmake_superduper_r1.pid.0=0x4242
-mickmake_superduper_r1.vid.1=0x4242
+mickmake_superduper_r1.vid.0=0x1209
+mickmake_superduper_r1.pid.0=0x5344
+mickmake_superduper_r1.vid.1=0x1209
 mickmake_superduper_r1.pid.1=0x000B
 mickmake_superduper_r1.upload.tool=bossac
 mickmake_superduper_r1.upload.protocol=sam-ba
@@ -20,8 +20,8 @@ mickmake_superduper_r1.build.ldscript=linker_scripts/gcc/flash_with_bootloader.l
 mickmake_superduper_r1.build.openocdscript=openocd_scripts/arduino_zero.cfg
 mickmake_superduper_r1.build.variant=SuperDuperRev1
 mickmake_superduper_r1.build.variant_system_lib=
-mickmake_superduper_r1.build.vid=0x4242
-mickmake_superduper_r1.build.pid=0x4242
+mickmake_superduper_r1.build.vid=0x1209
+mickmake_superduper_r1.build.pid=0x5344
 mickmake_superduper_r1.bootloader.tool=openocd
 mickmake_superduper_r1.bootloader.file=SuperDuper/samd21_sam_ba.bin
 
