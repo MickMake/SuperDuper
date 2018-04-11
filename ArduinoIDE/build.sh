@@ -27,10 +27,7 @@ then
 	exit 1
 fi
 
-echo "# Update $JSON with SHA $SHA"
-jq '.packages[0].platforms[0].checksum="'$SHA'"' < $TEMPLATE > $JSON
-
-echo "# Update $JSON with size $SIZE"
-jq '.packages[0].platforms[0].size="'$SIZE'"' < $TEMPLATE > $JSON
+echo "# Update $JSON with SIZE:$SIZE and SHA:$SHA"
+jq '.packages[0].platforms[0].checksum="'$SHA'" | .packages[0].platforms[0].size="'$SIZE'"' < $TEMPLATE > $JSON
 
 exit 0
