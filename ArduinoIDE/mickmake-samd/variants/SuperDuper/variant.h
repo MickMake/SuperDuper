@@ -88,11 +88,11 @@ extern "C"
 #define LED_BUILTIN	LED_GREEN
 
 // Other GPIO
-#define BUZZER		(6ul)
 #define BUTTON1		(2ul)
 #define BUTTON2		(3ul)
 #define BUTTON3		(4ul)
 #define BUTTON4		(5ul)
+#define BUZZER		(6ul)
 
 
 // Analog pins
@@ -151,7 +151,7 @@ static const uint8_t ATN = PIN_ATN;
 #define PAD_SPI2_RX	SERCOM_RX_PAD_0
 
 
-static const uint8_t SS	  = PIN_A0 ;	// SERCOM4 last PAD is present on A2 but HW SS isn't used. Set here only for reference.
+static const uint8_t SS	  = LED_GREEN;
 static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
@@ -209,6 +209,8 @@ extern SERCOM sercom4;
 extern SERCOM sercom5;
 
 extern Uart Serial1;
+// extern SPIClass SD1;
+// extern SPIClass SD2;
 
 #endif
 

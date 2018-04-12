@@ -234,7 +234,7 @@ void SPIClass::detachInterrupt() {
    *   - SercomRXPad
    */
   #ifndef PERIPH_SPI
-    #define PERIPH_SPI           sercom4
+    #define PERIPH_SPI           sercom0
     #define PAD_SPI_TX           SPI_PAD_2_SCK_3
     #define PAD_SPI_RX           SERCOM_RX_PAD_0
   #endif // PERIPH_SPI
