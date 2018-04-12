@@ -12,17 +12,17 @@
           "help": {
             "online": "https://mickmake.com/"
           },
-          "url": "https://github.com/MickMake/SuperDuper/raw/master/ArduinoIDE/mickmake-samd-1.0.0.tar.bz2",
-          "checksum": "SHA-256:a2d4375aa1a549067318999fc2a1d8a375f376986a9c2d06e3d76a978fb66839",
-          "version": "1.0.0",
+          "url": "https://github.com/MickMake/SuperDuper/raw/master/ArduinoIDE/mickmake-samd-1.0.1.tar.bz2",
+          "checksum": "SHA-256:91508d6c08018493efca6b29f29807a6a47fbeecaa7bf553e061a3965f1862c2",
+          "version": "1.0.1",
           "architecture": "samd",
-          "archiveFileName": "mickmake-samd-1.0.0.tar.bz2",
+          "archiveFileName": "mickmake-samd-1.0.1.tar.bz2",
           "boards": [
             {
               "name": "MickMake Super Duper"
             }
           ],
-          "size": "4684393",
+          "size": "4684516",
           "toolsDependencies": [
             {
               "packager": "arduino",

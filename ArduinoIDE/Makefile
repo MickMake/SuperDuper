@@ -1,12 +1,12 @@
-VERSION=1.0.0
-DIR=mickmake-samd-$(VERSION)
+VERSION=1.0.1
+DIR=mickmake-samd
 JSON="package_mickmake_index.json"
 
 all: build
 
 build: 
 	@echo ----------------------------------------------------------
-	@./build.sh $(DIR) $(JSON)
+	@./build.sh $(DIR) $(VERSION) $(JSON)
 
 clean:
 	@echo ----------------------------------------------------------

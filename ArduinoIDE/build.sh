@@ -3,8 +3,9 @@
 # Really quick hack to update the SHA256 in the JSON file.
 
 DIR="$1"
-JSON="$2"
-TARBALL="${DIR}.tar.bz2"
+VERSION="$2"
+JSON="$3"
+TARBALL="${DIR}-${VERSION}.tar.bz2"
 TEMPLATE="${JSON}.template";
 
 if [ "$JSON" == "" ]
@@ -27,7 +28,16 @@ then
 	exit 1
 fi
 
-echo "# Update $JSON with SIZE:$SIZE and SHA:$SHA"
-jq '.packages[0].platforms[0].checksum="'$SHA'" | .packages[0].platforms[0].size="'$SIZE'"' < $TEMPLATE > $JSON
+URL="https://github.com/MickMake/SuperDuper/raw/master/ArduinoIDE/${TARBALL}"
+
+echo "# Update $JSON with:
+version		: $VERSION
+url		: $URL
+archiveFileName	: $TARBALL
+size		: $SIZE
+checksum	: $SHA
+"
+
+jq '.packages[0].platforms[0].checksum="'$SHA'" | .packages[0].platforms[0].size="'$SIZE'" | .packages[0].platforms[0].url="'${URL}'" | .packages[0].platforms[0].archiveFileName="'${TARBALL}'" | .packages[0].platforms[0].version="'${VERSION}'"' < $TEMPLATE > $JSON
 
 exit 0
